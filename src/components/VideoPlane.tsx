@@ -9,7 +9,7 @@ export const VideoPlane = ({ videourl, ...props }) => {
     video.play()
   }, [video])
   return (
-    <mesh position={[0, 5, 0.51]} rotation={[0, 0, 0]} scale={[17, 10, 1]} {...props}>
+    <mesh castShadow receiveShadow position={[0, 5, 0.51]} rotation={[0, 0, 0]} scale={[16, 9, 1]} {...props}>
       <planeGeometry />
       <meshBasicMaterial toneMapped={false}>
         <videoTexture attach="map" args={[video]} encoding={THREE.sRGBEncoding} />

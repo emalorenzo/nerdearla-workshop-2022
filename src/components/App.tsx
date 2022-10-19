@@ -9,9 +9,10 @@ export const App = () => {
   return (
     <>
       <main className="app" ref={dom}>
-        <h1>
-          Web 3D Workshop
-        </h1>
+        <section className='hero'>
+          <h1>Web 3D Workshop</h1>
+          <h3>Por Emanuel Lorenzo - @emalorenzo_</h3>
+        </section>
       </main>
       <Canvas
         //@ts-ignore 

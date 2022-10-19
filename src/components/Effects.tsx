@@ -1,4 +1,4 @@
-import { EffectComposer, SSR } from '@react-three/postprocessing'
+import { EffectComposer, DepthOfField, Bloom, Noise, Vignette } from '@react-three/postprocessing'
 import { useControls } from 'leva'
 
 export function Effects() {
@@ -34,7 +34,8 @@ export function Effects() {
   })
   return (
     <EffectComposer disableNormalPass>
-      <SSR {...props} />
+      {/* <SSR {...props} /> */}
+      {/* <DepthOfField focusDistance={0.001} focalLength={0.03} bokehScale={3} /> */}
     </EffectComposer>
   )
 }

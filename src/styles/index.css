@@ -3,8 +3,13 @@ html, #root {
   width: 100%;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
-  background: #a2b9e7;
+  background: #000000;
 }
 
 :root {
@@ -42,9 +47,6 @@ body {
 }
 
 h1 {
-  position: absolute;
-  bottom: 0;
-  left: 5vw;
   font-size: 5em;
   line-height: 1.1;
   pointer-events: all;
@@ -65,4 +67,12 @@ h1 {
   position: relative;
   z-index: 2;
   pointer-events: none;
+}
+
+.app .hero {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
 }
