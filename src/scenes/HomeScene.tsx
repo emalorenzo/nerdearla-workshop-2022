@@ -20,7 +20,7 @@ function Sphere() {
   return (
     <mesh ref={ref} receiveShadow castShadow position={[-3, 0.55, -3]}>
       <sphereGeometry args={[0.5, 64, 64]} />
-      <meshStandardMaterial clearcoat={1} clearcoatRoughness={0} roughness={0} metalness={0.25} />
+      <meshStandardMaterial roughness={0} metalness={0.25} />
     </mesh>
   )
 }

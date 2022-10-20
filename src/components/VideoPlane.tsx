@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import * as THREE from 'three'
 
-export const VideoPlane = ({ videourl, ...props }) => {
+export const VideoPlane = ({ videourl, ...props }: any) => {
   const [video] = useState(
     () => Object.assign(document.createElement('video'), { src: videourl, crossOrigin: 'Anonymous', loop: true, muted: true })
   )

@@ -7,9 +7,9 @@ import { useGLTF } from '@react-three/drei'
 import * as THREE from 'three'
 
 
-export const Doge = (props) => {
+export const Doge = (props: any) => {
   const group = useRef()
-  const { nodes, materials } = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/dogue/model.gltf')
+  const { nodes, materials } = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/dogue/model.gltf') as any
     materials.body_orange = new THREE.MeshStandardMaterial({ color: '#cc7e47', envMapIntensity: 1, metalness: 0, roughness: 0.3 })
   return (
     <group ref={group} {...props} dispose={null}>
